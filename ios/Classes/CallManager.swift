@@ -41,6 +41,18 @@ class CallManager: NSObject {
         })
     }
     
+    func acceptIncomingCall(_ data: Data) {
+        let uuid = UUID(uuidString: data.uuid)
+        let answerCallAction = CXAnswerCallAction(call: uuid!)
+        let callTransaction = CXTransaction()
+        callTransaction.addAction(answerCallAction)
+        
+        //requestCall
+        self.requestCall(callTransaction, action: "answerCall", completion: { _ in
+            
+        })
+    }
+    
     func endCall(call: Call) {
         let endCallAction = CXEndCallAction(call: call.uuid)
         let callTransaction = CXTransaction()
@@ -152,6 +164,4 @@ class CallManager: NSObject {
     private func postCallNotification(){
         NotificationCenter.default.post(name: type(of: self).callsChangedNotification, object: self)
     }
-    
-    
 }

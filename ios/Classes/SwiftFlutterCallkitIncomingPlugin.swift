@@ -173,6 +173,10 @@ public class SwiftFlutterCallkitIncomingPlugin: NSObject, FlutterPlugin, CXProvi
         self.callManager?.startCall(data)
     }
     
+    @objc public func acceptIncomingCall(_ data: Data) {
+        self.callManager?.acceptIncomingCall(data)
+    }
+    
     @objc public func endCall(_ data: Data) {
         var call: Call? = nil
         if(self.isFromPushKit){
@@ -180,7 +184,10 @@ public class SwiftFlutterCallkitIncomingPlugin: NSObject, FlutterPlugin, CXProvi
             self.isFromPushKit = false
             self.sendEvent(SwiftFlutterCallkitIncomingPlugin.ACTION_CALL_ENDED, data.toJSON())
         }else {
-            call = Call(uuid: UUID(uuidString: data.uuid)!, data: data)
+            guard let callUUID =  UUID(uuidString: data.uuid) else {
+                return
+            }
+            call = Call(uuid: callUUID, data: data)
         }
         self.callManager?.endCall(call: call!)
     }
@@ -380,6 +387,7 @@ public class SwiftFlutterCallkitIncomingPlugin: NSObject, FlutterPlugin, CXProvi
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1200)) {
             self.configurAudioSession()
         }
+        print("CALL BACK HAS CALLED")
         self.answerCall = call
         sendEvent(SwiftFlutterCallkitIncomingPlugin.ACTION_CALL_ACCEPT, self.data?.toJSON())
         action.fulfill()
