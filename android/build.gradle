@@ -36,6 +36,8 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+
+    namespace "com.hiennv.flutter_callkit_incoming"
 }
 
 dependencies {
