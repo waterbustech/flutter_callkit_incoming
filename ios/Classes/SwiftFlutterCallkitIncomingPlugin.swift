@@ -271,7 +271,7 @@ public class SwiftFlutterCallkitIncomingPlugin: NSObject, FlutterPlugin, CXProvi
     }
     
     @objc public func acceptIncomingCall(_ data: Data) {
-        self.callManager?.acceptIncomingCall(data)
+        self.callManager.acceptIncomingCall(data)
     }
     
     @objc public func endCall(_ data: Data) {
