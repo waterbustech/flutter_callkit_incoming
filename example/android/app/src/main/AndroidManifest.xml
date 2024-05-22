@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_callkit_incoming_example">
+    package="com.example.waterbus_callkit_incoming_example">
    <application
-        android:label="flutter_callkit_incoming_example"
+        android:label="waterbus_callkit_incoming_example"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

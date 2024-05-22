@@ -1,25 +1,25 @@
-package com.hiennv.flutter_callkit_incoming
+package com.hiennv.waterbus_callkit_incoming
 
 object CallkitConstants {
     const val ACTION_CALL_INCOMING =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING"
-    const val ACTION_CALL_START = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_START"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_INCOMING"
+    const val ACTION_CALL_START = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_START"
     const val ACTION_CALL_ACCEPT =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_ACCEPT"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ACCEPT"
     const val ACTION_CALL_DECLINE =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_DECLINE"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_DECLINE"
     const val ACTION_CALL_ENDED =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_ENDED"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ENDED"
     const val ACTION_CALL_TOGGLE_MUTE =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_MUTE"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_MUTE"
     const val ACTION_CALL_TOGGLE_HOLD =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_HOLD"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_HOLD"
     const val ACTION_CALL_TIMEOUT =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TIMEOUT"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TIMEOUT"
     const val ACTION_CALL_CALLBACK =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_CALLBACK"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_CALLBACK"
     const val ACTION_CALL_CUSTOM =
-            "com.hiennv.flutter_callkit_incoming.ACTION_CALL_CUSTOM"
+            "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_CUSTOM"
 
 
     const val EXTRA_CALLKIT_INCOMING_DATA = "EXTRA_CALLKIT_INCOMING_DATA"

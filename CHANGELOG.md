@@ -1,3 +1,7 @@
+## 2.0.0+4
+
+* Add startCall func for iOS
+
 ## 2.0.0+2
 
 * Fixed some bugs.

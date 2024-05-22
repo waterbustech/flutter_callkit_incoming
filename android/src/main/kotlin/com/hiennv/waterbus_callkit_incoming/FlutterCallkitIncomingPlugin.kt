@@ -1,4 +1,4 @@
-package com.hiennv.flutter_callkit_incoming
+package com.hiennv.waterbus_callkit_incoming
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -15,7 +15,7 @@ import android.provider.Settings
 import androidx.annotation.NonNull
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
-import com.hiennv.flutter_callkit_incoming.Utils.Companion.reapCollection
+import com.hiennv.waterbus_callkit_incoming.Utils.Companion.reapCollection
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
@@ -70,11 +70,11 @@ class FlutterCallkitIncomingPlugin : FlutterPlugin, MethodCallHandler, ActivityA
                 instance.context = context
             }
 
-            val channel = MethodChannel(binaryMessenger, "flutter_callkit_incoming")
+            val channel = MethodChannel(binaryMessenger, "waterbus_callkit_incoming")
             methodChannels[binaryMessenger] = channel
             channel.setMethodCallHandler(instance)
 
-            val events = EventChannel(binaryMessenger, "flutter_callkit_incoming_events")
+            val events = EventChannel(binaryMessenger, "waterbus_callkit_incoming_events")
             eventChannels[binaryMessenger] = events
             val handler = EventCallbackHandler()
             eventHandlers.add(WeakReference(handler))

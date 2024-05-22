@@ -30,33 +30,33 @@ extension EventX on Event {
   String get name {
     switch (this) {
       case Event.actionDidUpdateDevicePushTokenVoip:
-        return 'com.hiennv.flutter_callkit_incoming.DID_UPDATE_DEVICE_PUSH_TOKEN_VOIP';
+        return 'com.hiennv.waterbus_callkit_incoming.DID_UPDATE_DEVICE_PUSH_TOKEN_VOIP';
       case Event.actionCallIncoming:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_INCOMING';
       case Event.actionCallStart:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_START';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_START';
       case Event.actionCallAccept:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_ACCEPT';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ACCEPT';
       case Event.actionCallDecline:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_DECLINE';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_DECLINE';
       case Event.actionCallEnded:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_ENDED';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ENDED';
       case Event.actionCallTimeout:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_TIMEOUT';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TIMEOUT';
       case Event.actionCallCallback:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_CALLBACK';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_CALLBACK';
       case Event.actionCallToggleHold:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_HOLD';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_HOLD';
       case Event.actionCallToggleMute:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_MUTE';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_MUTE';
       case Event.actionCallToggleDmtf:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_DMTF';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_DMTF';
       case Event.actionCallToggleGroup:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_GROUP';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_GROUP';
       case Event.actionCallToggleAudioSession:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_AUDIO_SESSION';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_AUDIO_SESSION';
       case Event.actionCallCustom:
-        return 'com.hiennv.flutter_callkit_incoming.ACTION_CALL_CUSTOM';
+        return 'com.hiennv.waterbus_callkit_incoming.ACTION_CALL_CUSTOM';
     }
   }
 }

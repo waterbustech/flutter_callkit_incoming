@@ -6,21 +6,21 @@ import AVFoundation
 @available(iOS 10.0, *)
 public class SwiftFlutterCallkitIncomingPlugin: NSObject, FlutterPlugin, CXProviderDelegate {
     
-    static let ACTION_DID_UPDATE_DEVICE_PUSH_TOKEN_VOIP = "com.hiennv.flutter_callkit_incoming.DID_UPDATE_DEVICE_PUSH_TOKEN_VOIP"
+    static let ACTION_DID_UPDATE_DEVICE_PUSH_TOKEN_VOIP = "com.hiennv.waterbus_callkit_incoming.DID_UPDATE_DEVICE_PUSH_TOKEN_VOIP"
     
-    static let ACTION_CALL_INCOMING = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING"
-    static let ACTION_CALL_START = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_START"
-    static let ACTION_CALL_ACCEPT = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_ACCEPT"
-    static let ACTION_CALL_DECLINE = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_DECLINE"
-    static let ACTION_CALL_ENDED = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_ENDED"
-    static let ACTION_CALL_TIMEOUT = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TIMEOUT"
-    static let ACTION_CALL_CUSTOM = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_CUSTOM"
+    static let ACTION_CALL_INCOMING = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_INCOMING"
+    static let ACTION_CALL_START = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_START"
+    static let ACTION_CALL_ACCEPT = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ACCEPT"
+    static let ACTION_CALL_DECLINE = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_DECLINE"
+    static let ACTION_CALL_ENDED = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ENDED"
+    static let ACTION_CALL_TIMEOUT = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TIMEOUT"
+    static let ACTION_CALL_CUSTOM = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_CUSTOM"
     
-    static let ACTION_CALL_TOGGLE_HOLD = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_HOLD"
-    static let ACTION_CALL_TOGGLE_MUTE = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_MUTE"
-    static let ACTION_CALL_TOGGLE_DMTF = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_DMTF"
-    static let ACTION_CALL_TOGGLE_GROUP = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_GROUP"
-    static let ACTION_CALL_TOGGLE_AUDIO_SESSION = "com.hiennv.flutter_callkit_incoming.ACTION_CALL_TOGGLE_AUDIO_SESSION"
+    static let ACTION_CALL_TOGGLE_HOLD = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_HOLD"
+    static let ACTION_CALL_TOGGLE_MUTE = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_MUTE"
+    static let ACTION_CALL_TOGGLE_DMTF = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_DMTF"
+    static let ACTION_CALL_TOGGLE_GROUP = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_GROUP"
+    static let ACTION_CALL_TOGGLE_AUDIO_SESSION = "com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TOGGLE_AUDIO_SESSION"
     
     @objc public private(set) static var sharedInstance: SwiftFlutterCallkitIncomingPlugin!
     
@@ -61,11 +61,11 @@ public class SwiftFlutterCallkitIncomingPlugin: NSObject, FlutterPlugin, CXProvi
     }
     
     private static func createMethodChannel(messenger: FlutterBinaryMessenger) -> FlutterMethodChannel {
-        return FlutterMethodChannel(name: "flutter_callkit_incoming", binaryMessenger: messenger)
+        return FlutterMethodChannel(name: "waterbus_callkit_incoming", binaryMessenger: messenger)
     }
     
     private static func createEventChannel(messenger: FlutterBinaryMessenger) -> FlutterEventChannel {
-        return FlutterEventChannel(name: "flutter_callkit_incoming_events", binaryMessenger: messenger)
+        return FlutterEventChannel(name: "waterbus_callkit_incoming_events", binaryMessenger: messenger)
     }
     
     public init(messenger: FlutterBinaryMessenger) {

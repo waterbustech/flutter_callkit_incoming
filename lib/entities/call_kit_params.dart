@@ -1,4 +1,4 @@
-import 'package:flutter_callkit_incoming/entities/notification_params.dart';
+import 'package:waterbus_callkit_incoming/entities/notification_params.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import 'android_params.dart';

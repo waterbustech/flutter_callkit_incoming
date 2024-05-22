@@ -96,6 +96,7 @@ class NavigationService {
     );
   }
 
+  // ignore: deprecated_member_use
   /// Consults the current route's [Route.willPop] method, and acts accordingly,
   /// potentially popping the route as a result; returns whether the pop request
   /// should be considered handled.

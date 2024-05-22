@@ -13,9 +13,9 @@ import 'entities/entities.dart';
 
 class FlutterCallkitIncoming {
   static const MethodChannel _channel =
-      MethodChannel('flutter_callkit_incoming');
+      MethodChannel('waterbus_callkit_incoming');
   static const EventChannel _eventChannel =
-      EventChannel('flutter_callkit_incoming_events');
+      EventChannel('waterbus_callkit_incoming_events');
 
   /// Listen to event callback from [FlutterCallkitIncoming].
   ///

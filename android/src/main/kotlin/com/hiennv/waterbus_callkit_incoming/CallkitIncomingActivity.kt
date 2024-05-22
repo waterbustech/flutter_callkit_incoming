@@ -1,4 +1,4 @@
-package com.hiennv.flutter_callkit_incoming
+package com.hiennv.waterbus_callkit_incoming
 
 import android.app.Activity
 import android.app.ActivityManager
@@ -20,7 +20,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.hiennv.flutter_callkit_incoming.widgets.RippleRelativeLayout
+import com.hiennv.waterbus_callkit_incoming.widgets.RippleRelativeLayout
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlin.math.abs
@@ -37,7 +37,7 @@ class CallkitIncomingActivity : Activity() {
     companion object {
 
         private const val ACTION_ENDED_CALL_INCOMING =
-                "com.hiennv.flutter_callkit_incoming.ACTION_ENDED_CALL_INCOMING"
+                "com.hiennv.waterbus_callkit_incoming.ACTION_ENDED_CALL_INCOMING"
 
         fun getIntent(context: Context, data: Bundle) = Intent(CallkitConstants.ACTION_CALL_INCOMING).apply {
             action = "${context.packageName}.${CallkitConstants.ACTION_CALL_INCOMING}"

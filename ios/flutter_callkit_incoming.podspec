@@ -1,15 +1,15 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint flutter_callkit_incoming.podspec` to validate before publishing.
+# Run `pod lib lint waterbus_callkit_incoming.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_callkit_incoming'
+  s.name             = 'waterbus_callkit_incoming'
   s.version          = '0.0.2'
   s.summary          = 'Flutter Callkit Incoming'
   s.description      = <<-DESC
 Flutter Callkit Incoming
                        DESC
-  s.homepage         = 'https://github.com/hiennguyen92/flutter_callkit_incoming'
+  s.homepage         = 'https://github.com/hiennguyen92/waterbus_callkit_incoming'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Hien Nguyen' => 'hien@hiennv.com' }
   s.source           = { :path => '.' }

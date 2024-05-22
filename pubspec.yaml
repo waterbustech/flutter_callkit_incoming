@@ -1,9 +1,9 @@
-name: flutter_callkit_incoming
+name: waterbus_callkit_incoming
 description: Flutter Callkit Incoming to show callkit screen in your Flutter app.
 version: 2.0.0+4
-homepage: https://github.com/hiennguyen92/flutter_callkit_incoming
-repository: https://github.com/hiennguyen92/flutter_callkit_incoming
-issue_tracker: https://github.com/hiennguyen92/flutter_callkit_incoming/issues
+homepage: https://github.com/hiennguyen92/waterbus_callkit_incoming
+repository: https://github.com/hiennguyen92/waterbus_callkit_incoming
+issue_tracker: https://github.com/hiennguyen92/waterbus_callkit_incoming/issues
 
 false_secrets:
   - /example/**
@@ -37,7 +37,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.hiennv.flutter_callkit_incoming
+        package: com.hiennv.waterbus_callkit_incoming
         pluginClass: FlutterCallkitIncomingPlugin
       ios:
         pluginClass: FlutterCallkitIncomingPlugin

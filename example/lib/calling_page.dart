@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_callkit_incoming/entities/entities.dart';
-import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
-import 'package:flutter_callkit_incoming_example/navigation_service.dart';
+import 'package:waterbus_callkit_incoming/entities/entities.dart';
+import 'package:waterbus_callkit_incoming/waterbus_callkit_incoming.dart';
+import 'package:waterbus_callkit_incoming_example/navigation_service.dart';
 import 'package:http/http.dart';
 
 class CallingPage extends StatefulWidget {
@@ -69,7 +69,7 @@ class CallingPageState extends State<CallingPage> {
               TextButton(
                 style: ButtonStyle(
                   foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.blue),
+                      WidgetStateProperty.all<Color>(Colors.blue),
                 ),
                 onPressed: () async {
                   if (calling != null) {
@@ -82,7 +82,7 @@ class CallingPageState extends State<CallingPage> {
               TextButton(
                 style: ButtonStyle(
                   foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.blue),
+                      WidgetStateProperty.all<Color>(Colors.blue),
                 ),
                 onPressed: () async {
                   if (calling != null) {

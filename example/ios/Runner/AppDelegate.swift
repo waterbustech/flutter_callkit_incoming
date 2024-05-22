@@ -1,7 +1,7 @@
 import UIKit
 import PushKit
 import Flutter
-import flutter_callkit_incoming
+import waterbus_callkit_incoming
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate, PKPushRegistryDelegate {
@@ -35,7 +35,7 @@ import flutter_callkit_incoming
         let objData = handleObj.getDecryptHandle()
         let nameCaller = objData["nameCaller"] as? String ?? ""
         let handle = objData["handle"] as? String ?? ""
-        let data = flutter_callkit_incoming.Data(id: UUID().uuidString, nameCaller: nameCaller, handle: handle, type: isVideo ? 1 : 0)
+        let data = waterbus_callkit_incoming.Data(id: UUID().uuidString, nameCaller: nameCaller, handle: handle, type: isVideo ? 1 : 0)
         //set more data...
         //data.nameCaller = nameCaller
         SwiftFlutterCallkitIncomingPlugin.sharedInstance?.startCall(data, fromPushKit: true)
@@ -67,7 +67,7 @@ import flutter_callkit_incoming
         let handle = payload.dictionaryPayload["handle"] as? String ?? ""
         let isVideo = payload.dictionaryPayload["isVideo"] as? Bool ?? false
         
-        let data = flutter_callkit_incoming.Data(id: id, nameCaller: nameCaller, handle: handle, type: isVideo ? 1 : 0)
+        let data = waterbus_callkit_incoming.Data(id: id, nameCaller: nameCaller, handle: handle, type: isVideo ? 1 : 0)
         //set more data
         data.extra = ["user": "abc@123", "platform": "ios"]
         //data.iconName = ...

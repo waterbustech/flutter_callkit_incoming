@@ -1,4 +1,4 @@
-package com.hiennv.flutter_callkit_incoming
+package com.hiennv.waterbus_callkit_incoming
 
 import android.Manifest
 import android.app.Activity
@@ -27,7 +27,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.hiennv.flutter_callkit_incoming.widgets.CircleTransform
+import com.hiennv.waterbus_callkit_incoming.widgets.CircleTransform
 import com.squareup.picasso.OkHttp3Downloader
 import com.squareup.picasso.Picasso
 import com.squareup.picasso.Target

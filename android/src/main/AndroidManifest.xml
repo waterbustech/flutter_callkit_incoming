@@ -10,8 +10,8 @@
     <application>
 
         <activity
-            android:name="com.hiennv.flutter_callkit_incoming.CallkitIncomingActivity"
-            android:taskAffinity="com.hiennv.flutter_callkit_incoming.INCOMING_CALL_AFFINITY"
+            android:name="com.hiennv.waterbus_callkit_incoming.CallkitIncomingActivity"
+            android:taskAffinity="com.hiennv.waterbus_callkit_incoming.INCOMING_CALL_AFFINITY"
             android:excludeFromRecents="true"
             android:noHistory="true"
             android:showOnLockScreen="true"
@@ -20,32 +20,32 @@
             android:exported="true"
             android:theme="@style/CallkitIncomingTheme">
             <intent-filter>
-                <action android:name="${applicationId}.com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING" />
+                <action android:name="${applicationId}.com.hiennv.waterbus_callkit_incoming.ACTION_CALL_INCOMING" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:exported="false"
             android:theme="@style/TranslucentTheme"
-            android:name="com.hiennv.flutter_callkit_incoming.TransparentActivity"/>
+            android:name="com.hiennv.waterbus_callkit_incoming.TransparentActivity"/>
 
         <receiver
-            android:name="com.hiennv.flutter_callkit_incoming.CallkitIncomingBroadcastReceiver"
+            android:name="com.hiennv.waterbus_callkit_incoming.CallkitIncomingBroadcastReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="${applicationId}.com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING" />
-                <action android:name="${applicationId}.com.hiennv.flutter_callkit_incoming.ACTION_CALL_ACCEPT" />
-                <action android:name="${applicationId}.com.hiennv.flutter_callkit_incoming.ACTION_CALL_DECLINE" />
-                <action android:name="${applicationId}.com.hiennv.flutter_callkit_incoming.ACTION_CALL_ENDED" />
-                <action android:name="${applicationId}.com.hiennv.flutter_callkit_incoming.ACTION_CALL_TIMEOUT" />
+                <action android:name="${applicationId}.com.hiennv.waterbus_callkit_incoming.ACTION_CALL_INCOMING" />
+                <action android:name="${applicationId}.com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ACCEPT" />
+                <action android:name="${applicationId}.com.hiennv.waterbus_callkit_incoming.ACTION_CALL_DECLINE" />
+                <action android:name="${applicationId}.com.hiennv.waterbus_callkit_incoming.ACTION_CALL_ENDED" />
+                <action android:name="${applicationId}.com.hiennv.waterbus_callkit_incoming.ACTION_CALL_TIMEOUT" />
             </intent-filter>
         </receiver>
 
         <service
             android:enabled="true"
             android:exported="true"
-            android:name="com.hiennv.flutter_callkit_incoming.CallkitSoundPlayerService"/>
+            android:name="com.hiennv.waterbus_callkit_incoming.CallkitSoundPlayerService"/>
 
     </application>
 </manifest>
